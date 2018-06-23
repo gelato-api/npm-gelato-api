@@ -1,6 +1,6 @@
 {
   "name": "print-api",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Promise wrapper for communicating with Gelato Print API",
   "main": "main.js",
   "scripts": {

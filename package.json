@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/gelato-api/npm-gelato-api#readme",
   "dependencies": {
+    "debug": "^3.1.0",
     "superagent": "^3.8.3"
   }
 }

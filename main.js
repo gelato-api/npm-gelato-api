@@ -3,7 +3,7 @@ const request = require('superagent');
 let gelato = (key, options)=>{
 	let opt = Object.assign(
 		{}, 
-		{url: process.env.NODE_ENV == 'production' ? 'https://api.gelato.com/v1/' : 'https://api-test.gelato.com/v1/'}, 
+		{url: options.test ? 'https://api-test.gelato.com/v1/' : 'https://api.gelato.com/v1/'}, 
 		options ? options: {}
 	);
 	let wrapRequest = (type, endpoint)=>{

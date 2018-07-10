@@ -14,6 +14,35 @@ let gelato = (key, options)=>{
 	}
 	debug('Init options', opt);
 	return {
+		example: (type)=>{
+			if(type == 'quote'){
+				let dummyReference = new Date().valueOf();
+				return {
+				    "order": {
+				        "orderReferenceId": dummyReference,
+				        "customerReferenceId": dummyReference+'21',
+				        "currencyIsoCode": "USD"
+				    },
+				    "recipient": {
+				        "countryIsoCode": "NO",
+				        "firstName": "Vitalii",
+				        "lastName": "Nilsen",
+				        "addressLine1": "Sunlia 22A",
+				        "addressLine2": "",
+				        "city": "Nesoya",
+				        "postcode": "1397",
+				        "email": "email@company.com",
+				        "phone": "+47132113321"
+				    },
+				    "product": {
+				        "itemReferenceId": dummyReference+'332221',
+				        "productUid": "cards_pf_a5_pt_350-gsm-coated-silk_cl_4-4_ver",
+				        "pdfUrl": "http://developers.gelato.com/documentation/v1/images/products/cards_a5_4-4.pdf",
+				        "quantity": 100
+				    }
+				}
+			}
+		},
 		quote: (options) =>{
 			debug('create quote promise with ', options);
 			return wrapRequest('post', 'quote').send(options);

@@ -19,6 +19,13 @@ gelato.quote({
 
 ## Methods
 
+### Example
+Get an example request body for a quote request
+
+```
+gelato.example()
+```
+
 ### Quote
 Get a price and delivery quote for the specified product
 

@@ -3,6 +3,7 @@
   "version": "0.4.0",
   "description": "Promise wrapper for communicating with Gelato Print API",
   "main": "main.js",
+  "tonicExampleFilename": "test.js",
   "scripts": {
     "test": "ava"
   },

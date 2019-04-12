@@ -3,7 +3,7 @@ const request = require('superagent');
 let gelato = (key, options)=>{
 	let opt = Object.assign(
 		{}, 
-		{url: options.test ? 'https://api-test.gelato.com/v1/' : 'https://api.gelato.com/v1/'}, 
+		{url: options.test ? 'https://api-test.gelato.com/v2/' : 'https://api.gelato.com/v2/'}, 
 		options ? options: {}
 	);
 	let wrapRequest = (type, endpoint)=>{
@@ -33,12 +33,12 @@ let gelato = (key, options)=>{
 			        "email": "vitaliy@company.com",
 			        "phone": "+4766552131"
 			    },
-			    "product": {
+			    "products": [{
 			        "itemReferenceId": dummyReference+3,
 			        "productUid": "cards_pf_a5_pt_350-gsm-coated-silk_cl_4-4_ver",
 			        "pdfUrl": "http://example.com/print_job.pdf",
 			        "quantity": 100
-			    }
+			    }]
 			 }			
 		},
 		quote: (options) =>{

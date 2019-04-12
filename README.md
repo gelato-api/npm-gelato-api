@@ -2,18 +2,19 @@
 
 Promise wrapper for interacting with Gelato Print API
 
-```
-const gelato = require('print-api')('<YOUR API KEY>');
 
+## Installation
+```
+npm install print-api
 ```
 
-## Example Usage
+
+## Initiating print api
+For all request we require a valid API KEY. Apply for API key [here](https://www.gelato.com/)
 ```
-gelato.quote({
-	order: {...}, product: {...}, recipient: {...}
-}).then(r=>{
-	console.log(r.body);
-}).catch(console.error)
+const gelato = require('print-api')('<YOUR API KEY>', {
+	test: true
+});
 
 ```
 

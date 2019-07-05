@@ -20,18 +20,19 @@ let gelato = (key, options)=>{
 			    "order": {
 			        "orderReferenceId": dummyReference+1,
 			        "customerReferenceId": dummyReference+2,
-			        "currencyIsoCode": "NOK"
+			        "currencyIsoCode": "USD"
 			    },
 			    "recipient": {
-			        "countryIsoCode": "NO",
-			        "firstName": "Vitalii",
-			        "lastName": "Nilsen",
-			        "addressLine1": "Tornae 7150",
+			        "countryIsoCode": "US",
+			        "firstName": "Bertram",
+			        "lastName": "Gilfoyle",
+			        "addressLine1": "5230 Newell Road",
 			        "addressLine2": "",
-			        "city": "Oslo",
-			        "postcode": "0022",
-			        "email": "vitaliy@company.com",
-			        "phone": "+4766552131"
+			        "stateCode": "CA",
+			        "city": "Palo Alto",
+			        "postcode": "94301",
+			        "email": "betram@piedpiper.com",
+			        "phone": "+1555320018"
 			    },
 			    "products": [{
 			        "itemReferenceId": dummyReference+3,
